@@ -17,8 +17,13 @@ section{
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.292);
 }
 
+
 footer{
     color: white;
     text-align: center;
     font-style: italic;
 }
+
+/*img{
+    padding: 18px;
+}*/
