@@ -1,3 +1,5 @@
+// Testes gerais com JavaScript
+
 // 5! = 5 * 4 * 3 * 2 * 1 fatorial
 
 /*function fatorial(n) {

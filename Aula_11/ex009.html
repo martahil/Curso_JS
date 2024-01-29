@@ -1,10 +1,15 @@
+<!-- Testes gerais com HTML -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 009 em html</title>
+
 </head>
+
 <body>
     <h1>Verificação de nacionalidade</h1>
     Nacionalidade: <input type="string" name="txtnac" id="txtnac">
@@ -12,28 +17,28 @@
     <div id="res"></div>
 
     <script>
-        function verifnac(){
+        function verifnac() {
             var txtn = window.document.getElementById('txtnac')
             var res = window.document.querySelector('div#res')
             var nac = txtn.value
             res.innerHTML = `<p>Seu país é <strong>${nac}.</strong></p>`
-            if(nac == 'Brasil'){
+            if (nac == 'Brasil') {
                 res.innerHTML += `<p> Você é <strong>brasileiro</strong>.</p>`
-            }else{
+            } else {
                 res.innerHTML += `<p> Você é <strong>estrangeiro</strong>.</p>`
-            }            
+            }
+
+            // var país = 'EUA'
+            // console.log(`Vivendo em ${país}`)
+            // if(país != 'Brasil'){
+            //     console.log('Estrangeiro!')
+            // }else{
+            //     console.log('Brasileiro')
+            // }      
+
         }
     </script>
+
 </body>
+
 </html>
-
-
-<!--
-var país = 'EUA'
-console.log(`Vivendo em ${país}`)
-if(país != 'Brasil'){
-    console.log('Estrangeiro!')
-}else{
-    console.log('Brasileiro')
-}      
-*/-->

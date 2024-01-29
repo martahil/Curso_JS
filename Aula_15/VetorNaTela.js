@@ -1,3 +1,5 @@
+// Testes gerais com JavaScript
+
 /*let valores = [8, 1, 7, 4, 2, 9]
 
 console.log(valores[0])
@@ -13,13 +15,13 @@ console.log(valores)
 
 console.log("--------------------")
 
-for(let pos = 0; pos < valores.length; pos++) {
+for (let pos = 0; pos < valores.length; pos++) {
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
 
 console.log("--------------------")
 
-for(let pos in valores) {
+for (let pos in valores) {
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
 
@@ -27,7 +29,7 @@ valores.sort()
 
 console.log("Em ordem:")
 
-for(let pos in valores) {
+for (let pos in valores) {
     console.log(`A posição ${pos} tem o valor ${valores[pos]}`)
 }
 
@@ -46,10 +48,10 @@ console.log(`O valor de 4 está na posição ${pos}`) //Não existe o número 4,
 let pos = num.indexOf(4)
 //let pos = num.indexOf(8)
 
-if(pos == -1) {
+if (pos == -1) {
     console.log('O valor não foi encontrado')
 } else {
-console.log(`O valor está na posição ${pos}`) //Não existe o número 4, logo será considerada a posição -1
+    console.log(`O valor está na posição ${pos}`) //Não existe o número 4, logo será considerada a posição -1
 }
 
 /*num.sort()

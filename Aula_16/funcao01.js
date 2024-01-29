@@ -1,5 +1,7 @@
+// Testes gerais com JavaScript
+
 function parimp(n) {
-    if (n%2 == 0) {
+    if (n % 2 == 0) {
         return 'par'
     } else {
         return 'impar'

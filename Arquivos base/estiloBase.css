@@ -3,16 +3,11 @@
   src: url("Fonts/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf");
 }
 
-@font-face { /*utilzada no nome do perfil e no texto explicativo do post*/
+@font-face {
+  /*utilzada no nome do perfil e no texto explicativo do post*/
   font-family: 'fonteNomeTexto';
   src: url("Fonts/Roboto-Regular.ttf");
 }
-
-/* @font-face {
-  font-family: 'fonteTextoPost';
-  src: url("Fonts/Roboto-Thin.ttf");
-} */
-
 
 @font-face {
   font-family: 'fontePost';
@@ -22,11 +17,8 @@
 body,
 html {
   background: black;
-  /* height: 100%; */
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
-
 }
 
 body {
@@ -38,9 +30,6 @@ header {
   align-items: center;
   justify-content: center;
   height: 100px;
-  /* background: red; */
-
-
 }
 
 .tituloPrincipal {
@@ -48,22 +37,17 @@ header {
   color: aliceblue;
   font-size: 35px;
   border-top: 50px;
-
-
 }
 
 .posts {
-  /* background: gray; */
   height: 100%;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .post {
-  /* background: rgb(0, 0, 0); */
   height: 390px;
   width: 90%;
   margin-top: 20px;
@@ -71,21 +55,14 @@ header {
 }
 
 .fotoNome {
-  /* border: 2px red solid; */
   height: 70px;
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .foto {
-  /* background: pink; */
   margin-left: 5px;
-  /* height: 30px;
-    width: 30px;
-    border-radius: 50px;    */
-
 }
 
 .fotoPerfil {
@@ -93,21 +70,17 @@ header {
 }
 
 .nome {
-  /* background: red; */
   margin-left: 30px;
   margin-left: 10px;
   font-family: fonteNomeTexto;
   font-size: 30px;
   color: aliceblue;
-
 }
 
 .textBox {
-  /* border: 2px green solid; */
   border-radius: 15px;
   height: 210px;
   margin-top: 10px;
-
   font-family: fontePost;
   font-size: 30px;
 }
@@ -132,11 +105,10 @@ header {
 }
 
 #textBox4 {
-  
   background: #5AED92;
 }
+
 #textBox5 {
-  
   background: #6d96ED;
 }
 
@@ -148,18 +120,16 @@ header {
   padding-bottom: 35px;
 }
 
-
 .textBox a {
-
+  text-decoration: underline;
   color: black;
+  text-decoration: none;
 }
 
 .textBox a:hover {
-  /*a d âncora*/
   color: #2A6BF7;
   text-decoration: underline;
 }
-
 
 .textoPost {
   font-family: fonteNomeTexto;
@@ -169,12 +139,9 @@ header {
 }
 
 .main {
-  /* background: darkblue; */
   height: 100px;
   width: 500px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }

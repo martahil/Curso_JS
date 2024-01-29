@@ -1,23 +1,30 @@
+<!-- Testes gerais com HTML -->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <!--<meta http-equiv="refresh" content="=1.0">-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiros passos com DOM</title>
+
     <style>
-        body{
-            background:rgb(194, 154, 154);
+        body {
+            background: rgb(194, 154, 154);
             color: white;
             font: normal 18pt Arial;
         }
     </style>
+
 </head>
+
 <body>
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div class = "msg"> Clique em mim</div>
+
+    <div class="msg"> Clique em mim</div>
     <!--<div name = "msg"> Clique em mim</div>-->
     <!--<div class = "msg"> Clique em mim</div>-->
 
@@ -39,7 +46,8 @@
         d.innerText = 'Olá, tudo bem!!!!!!!!!!!!!!'*/
         var d = window.document.querySelector('div.msg')
         d.style.color = 'blue'
-
     </script>
+
 </body>
+
 </html>

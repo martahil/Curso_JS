@@ -1,11 +1,13 @@
+// Testes gerais com JavaScript
+
 //como fazer o fatorial de uma forma recursiva (uma recursão acontece quando uma função chama ela mesma)
 
 function fatorial(n) {
-    if(n==1) {
+    if (n == 1) {
         return 1
     } else {
         return n * fatorial(n - 1) //aqui a função chama ela mesma = RECURSIVIDADE
-    } 
+    }
 }
 console.log(fatorial(5))
 

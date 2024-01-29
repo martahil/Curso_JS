@@ -1,7 +1,9 @@
+// Testes gerais com JavaScript
+
 var país = 'EUA'
 console.log(`Vivendo em ${país}`)
-if(país != 'Brasil'){
+if (país != 'Brasil') {
     console.log('Estrangeiro!')
-}else{
+} else {
     console.log('Brasileiro')
 }

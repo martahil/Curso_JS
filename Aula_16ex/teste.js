@@ -1,3 +1,5 @@
+// Testes gerais com JavaScript
+
 let valoresA = [8, 1, 7, 4, 2, 9]
 
 console.log("Parte 1 do teste")
@@ -15,4 +17,3 @@ valoresB.push(5)
 console.log(valoresB)
 console.log(valoresB.length)
 
-//

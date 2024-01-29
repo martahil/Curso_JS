@@ -1,3 +1,5 @@
+// Testes gerais com JavaScript
+
 var agora = new Date()
 var diaSem = agora.getDay()
 
@@ -15,7 +17,7 @@ var diaSem = agora.getDay()
 
 //console.log(diaSem)
 
-switch(diaSem){
+switch (diaSem) {
     case 0:
         console.log('Domingo')
         break

@@ -4,7 +4,7 @@ let res = window.document.querySelector('div#res')
 let valores = []
 
 function isNumero(n) { //é um número entre 1 e 100?
-    if(Number(n) >= 1 && Number(n) <= 100) {
+    if (Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
         return false
@@ -13,14 +13,14 @@ function isNumero(n) { //é um número entre 1 e 100?
 
 function inLista(n, l) { //o número já está na lista?
     if (l.indexOf(Number(n)) != -1) {
-        return true 
+        return true
     } else {
         return false
     }
 }
 
 function addNum() {
-    if(isNumero(numInsert.value) && !inLista(numInsert.value, valores)) {
+    if (isNumero(numInsert.value) && !inLista(numInsert.value, valores)) {
         valores.push(Number(numInsert.value)) //adiciona o número no vetor
         let item = document.createElement('option') //adiciona o número na "janela" do select
         item.text = `Valor ${numInsert.value} adicionado.`
@@ -45,12 +45,12 @@ function fin() {
         let soma = 0
         let media = 0
 
-        for(let pos in valores) { //laço de percurso
+        for (let pos in valores) { //laço de percurso
             soma += valores[pos]
             if (valores[pos] > maior)
-            maior = valores[pos]
+                maior = valores[pos]
             if (valores[pos] < menor)
-            menor = valores[pos]
+                menor = valores[pos]
         }
 
         media = soma / tot
@@ -60,8 +60,6 @@ function fin() {
         res.innerHTML += `<p>O maior valor informado foi ${maior}.</p>`
         res.innerHTML += `<p>O menor valor informado foi ${menor}.</p>`
         res.innerHTML += `<p>Somando todos os valores, temos ${soma}.</p>`
-        res.innerHTML += `<p>A média dos valores digitados é ${media }.</p>`
-
+        res.innerHTML += `<p>A média dos valores digitados é ${media}.</p>`
     }
-
 }
