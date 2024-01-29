@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'fonteTituloPrincipal';
+  src: url("Fonts/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf");
+}
+
+@font-face { /*utilzada no nome do perfil e no texto explicativo do post*/
+  font-family: 'fonteNomeTexto';
+  src: url("Fonts/Roboto-Regular.ttf");
+}
+
+/* @font-face {
+  font-family: 'fonteTextoPost';
+  src: url("Fonts/Roboto-Thin.ttf");
+} */
+
+
+@font-face {
+  font-family: 'fontePost';
+  src: url("Fonts/Super\ Disco\ Personal\ Use.ttf");
+}
+
+body,
+html {
+  background: black;
+  /* height: 100%; */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+
+}
+
+body {
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  /* background: red; */
+
+
+}
+
+.tituloPrincipal {
+  font-family: fonteTituloPrincipal;
+  color: aliceblue;
+  font-size: 35px;
+  border-top: 50px;
+
+
+}
+
+.posts {
+  /* background: gray; */
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.post {
+  /* background: rgb(0, 0, 0); */
+  height: 390px;
+  width: 90%;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.fotoNome {
+  /* border: 2px red solid; */
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.foto {
+  /* background: pink; */
+  margin-left: 5px;
+  /* height: 30px;
+    width: 30px;
+    border-radius: 50px;    */
+
+}
+
+.fotoPerfil {
+  height: 60px;
+}
+
+.nome {
+  /* background: red; */
+  margin-left: 30px;
+  margin-left: 10px;
+  font-family: fonteNomeTexto;
+  font-size: 30px;
+  color: aliceblue;
+
+}
+
+.textBox {
+  /* border: 2px green solid; */
+  border-radius: 15px;
+  height: 210px;
+  margin-top: 10px;
+
+  font-family: fontePost;
+  font-size: 30px;
+}
+
+.textBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+#textBox1 {
+  background: #23F6BB;
+}
+
+#textBox2 {
+  background: #5AB7ED;
+}
+
+#textBox3 {
+  background: #5AE5ED;
+}
+
+#textBox4 {
+  
+  background: #5AED92;
+}
+#textBox5 {
+  
+  background: #6d96ED;
+}
+
+.linkPost {
+  text-align: center;
+}
+
+#ultimoPost {
+  padding-bottom: 35px;
+}
+
+
+.textBox a {
+
+  color: black;
+}
+
+.textBox a:hover {
+  /*a d âncora*/
+  color: #2A6BF7;
+  text-decoration: underline;
+}
+
+
+.textoPost {
+  font-family: fonteNomeTexto;
+  font-size: 14px;
+  color: aliceblue;
+  text-indent: 25px;
+}
+
+.main {
+  /* background: darkblue; */
+  height: 100px;
+  width: 500px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
