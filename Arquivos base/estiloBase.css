@@ -39,19 +39,31 @@ header {
   border-top: 50px;
 }
 
+.main {
+  height: 100%;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .posts {
   height: 100%;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 18px;
 }
 
 .post {
-  height: 390px;
   width: 90%;
   margin-top: 20px;
   padding: 10px;
+  border: solid;
+  border-width: thin;
+  border-color: rgb(53, 53, 54);
+  border-radius: 15px;
 }
 
 .fotoNome {
@@ -63,6 +75,13 @@ header {
 
 .foto {
   margin-left: 5px;
+
+  /*Borda colorida ao redor da foto de perfil*/
+  padding: 3px;
+  display: flex;
+  border-style: solid;
+  background: linear-gradient(to right, orange, red, darkorchid) padding-box, linear-gradient(to right, orange, red, darkorchid) border-box;
+  border-radius: 50em;
 }
 
 .fotoPerfil {
@@ -83,9 +102,6 @@ header {
   margin-top: 10px;
   font-family: fontePost;
   font-size: 30px;
-}
-
-.textBox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,10 +132,6 @@ header {
   text-align: center;
 }
 
-#ultimoPost {
-  padding-bottom: 35px;
-}
-
 .textBox a {
   text-decoration: underline;
   color: black;
@@ -138,10 +150,37 @@ header {
   text-indent: 25px;
 }
 
-.main {
-  height: 100px;
-  width: 500px;
+.pTexts {
+  margin-top: 2px;
+}
+
+.likeButtonDiv {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 8px;
+}
+
+input.likeNum {
+  border: none;
+  outline: none;
+  width: 45px;
+  height: 30px;
+  font-size: 14px;
+  background: black;
+  color: aliceblue;
+  font-family: fonteNomeTexto;
+  margin: 0px;
+  float: right;
+  padding-left: 5px;
+}
+
+input::placeholder {
+  font-family: fonteNomeTexto;
+  font-size: 14px;
+  color: aliceblue;
+}
+
+/*Esconde as arrows do input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }

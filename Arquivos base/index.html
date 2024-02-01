@@ -16,7 +16,7 @@
 
         <div class="posts">
 
-            <div class="post"> <!-- post 1 -->
+            <div class="post" style="height: 415px;"> <!-- post 1 -->
                 <div class="fotoNome">
                     <div class="foto"> <img class="fotoPerfil" src="Imagens/paisagem.png"></div>
                     <div class="nome"> Que horas são? </div>
@@ -25,16 +25,22 @@
                     <a class="linkPost" href="../Aula_12ex/ex014/modelo.html">Clique aqui <br>
                         e descubra &#8282;&#41;</a>
                 </div>
+                <div class="likeButtonDiv">
+                    <input type="image" class="likebotao" src="Imagens/likeButton.png" height="25px" alt="Botão de like"
+                        onclick="buttonClicked1()">
+                    <input type="number" name="txtNum" class="likeNum" id="likeNum1" readonly placeholder="32">
+                </div>
                 <div class="textoPost">
-                    <p>
+                    <p class="pTexts">
                         Nesta aula, foi feito um website que capta a hora do dia e,
                         de acordo com o horário,
-                        insere uma imagem e uma mensagem, alterando também a cor de fundo da página.
+                        insere uma imagem correspondentee uma mensagem indicando a hora atual,
+                        alterando também a cor de fundo da página.
                     </p>
                 </div>
             </div>
 
-            <div class="post"> <!-- post 2 -->
+            <div class="post" style="height: 448px;"> <!-- post 2 -->
                 <div class="fotoNome">
                     <div class="foto"> <img class="fotoPerfil" src="Imagens/humano.png"> </div>
                     <div class="nome"> Quem é você? </div>
@@ -42,34 +48,50 @@
                 <div class="textBox" id="textBox2">
                     <a class="linkPost" href="../Aula_12ex/ex015/modelo.html">Clique aqui <br> se tiver coragem</a>
                 </div>
+                <div class="likeButtonDiv">
+                    <input type="image" class="likebotao" src="Imagens/likeButton.png" height="25px" alt="Botão de like"
+                        onclick="buttonClicked2()">
+                    <input type="number" name="txtNum" class="likeNum" id="likeNum2" readonly placeholder="16">
+                </div>
                 <div class="textoPost">
-                    <p>
+                    <p class="pTexts">
                         Nesta aula, foi feito um formulário e, de acordo com o ano de nascimento e sexo preenchidos,
-                        aparece uma imagem correspondente, além do sexo e idade que aparecem na tela.
+                        aparece uma imagem correspondente, além do sexo e idade que também aparecerão na tela. <br>
+                        ### Uma mensagem de erro aparecem se o ano digitado foi maior do que o ano atual, ou se nenhum
+                        ano for inserido.
                     </p>
                 </div>
             </div>
 
-            <div class="post"> <!-- post 3 -->
+            <div class="post" style="height: 519px;"> <!-- post 3 -->
                 <div class="fotoNome">
                     <div class="foto"> <img class="fotoPerfil" src="Imagens/numeros.png"></div>
-                    <div class="foto"></div>
                     <div class="nome"> El contador </div>
                 </div>
                 <div class="textBox" id="textBox3">
                     <a class="linkPost" href="../Aula_14ex/ex016/modelo.html">Clique aqui <br>
                         e veja a <br> mágica acontecer!</a>
                 </div>
+                <div class="likeButtonDiv">
+                    <input type="image" class="likebotao" src="Imagens/likeButton.png" height="25px" alt="Botão de like"
+                        onclick="buttonClicked3()">
+                    <input type="number" name="txtNum" class="likeNum" id="likeNum3" readonly placeholder="29">
+                </div>
                 <div class="textoPost">
-                    <p>
+                    <p class="pTexts">
                         Nesta aula, foi feito um contador de números que pula a contagem de acordo com sua preferência.
                         Você também pode decidir em qual número começa a contagem, e em qual número termina. Emojis
-                        foram inseridos no resultado para fins de aprendizado.
+                        foram inseridos no resultado para fins de aprendizado. <br>
+                        ### Uma mensagem de erro aparece se o número a ser inserido que "pula" a contagem for igual ou
+                        menor
+                        do que zero (neste caso, o número um substituirá o número que foi incorretamente inserido).
+                        Caso um dos três campos não for preenchido, aparece uma mensagem indicando que é impossível
+                        contar.
                     </p>
                 </div>
             </div>
 
-            <div class="post"> <!-- post 4 -->
+            <div class="post" style="height: 416px;"> <!-- post 4 -->
                 <div class="fotoNome">
                     <div class="foto"> <img class="fotoPerfil" src="Imagens/tabuada.png"> </div>
                     <div class="nome"> Tabuada, a temida </div>
@@ -78,15 +100,22 @@
                     <a class="linkPost" href="../Aula_14ex/ex017/modelo.html">Clique aqui, <br> posso te ajudar
                         &#60;&#51; </a>
                 </div>
+                <div class="likeButtonDiv">
+                    <input type="image" class="likebotao" src="Imagens/likeButton.png" height="25px" alt="Botão de like"
+                        onclick="buttonClicked4()">
+                    <input type="number" name="txtNum" class="likeNum" id="likeNum4" readonly placeholder="16">
+                </div>
                 <div class="textoPost">
-                    <p>
+                    <p class="pTexts">
                         Nesta aula, foi feita uma página em que você insere um número,
-                        e é gerada a respectiva tabuada.
+                        e é gerada a respectiva tabuada. <br>
+                        ### Uma mensagem de erro aparecerá caso nenhum número for inserido no campo
+                        antes de clicar em "Gerar Tabuada".
                     </p>
                 </div>
             </div>
 
-            <div class="post" id="ultimoPost"> <!-- post 5 -->
+            <div class="post" style="height: 498px;"> <!-- post 5 -->
                 <div class="fotoNome">
                     <div class="foto"> <img class="fotoPerfil" src="Imagens/analisador.png"> </div>
                     <div class="nome"> O analista </div>
@@ -95,19 +124,30 @@
                     <a class="linkPost" style="font-size: 28px;" href="../Aula_16ex/ex018/modelo.html">
                         Clique aqui &#8282;&#41; <br>
                         Calma, não vamos <br> te analisar. <br>
-                        Nosso negócio é número.
-                    </a>
+                        Nosso negócio é número. </a>
+                </div>
+                <div class="likeButtonDiv">
+                    <input type="image" class="likebotao" src="Imagens/likeButton.png" height="25px" alt="Botão de like"
+                        onclick="buttonClicked5()">
+                    <input type="number" name="txtNum" class="likeNum" id="likeNum5" readonly placeholder="18">
                 </div>
                 <div class="textoPost">
-                    <p>
+                    <p class="pTexts">
                         Nesta aula, foi feito um formulário que você pode inserir vários números de 1 a 100.
-                        Após, o analisador indicará informações sonbre os números inseridos.
+                        Após, o analisador indicará informações sobre os números inseridos. <br>
+                        ## Aparecerá uma mensagem de erro caso nenhum número for digitado no primeiro campo antes de
+                        clicar em "Adicionar",
+                        ou se nenhum número for inserido no segundo campo antes de clicar em "Finalizar".
+                        Também serão considerados inválidos números menores do que um e maiores do que cem, e também
+                        números repetidos.
                     </p>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <script src="likeButton.js"></script>
 
 </body>
 
