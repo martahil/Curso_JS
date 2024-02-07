@@ -159,6 +159,14 @@ header {
   margin-top: 8px;
 }
 
+.likebotao {
+  transition: transform 0.2s ease-in-out; /* Adicionando transição de escala */
+}
+
+.likebotao:active {
+  transform: scale(1.2);
+}
+
 input.likeNum {
   border: none;
   outline: none;
